@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" type="text/css" href="/front.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -14,21 +14,24 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>findWG</title>
 </head>
 <body>
 <div class="bg"></div>
 <div class="container">
     <h4>findWG</h4>
     <h5 class="lead">german real estate ocean explorer</h5>
-    <div class="input-form">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Your city">
-            <div class="input-group-append">
-                <button class="btn btn-light" style="background-color: #dfe1e1" type="button">Send</button>
+    <form method="POST" action="/city" id="theForm">
+        <div class="input-form">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="cityName" placeholder="Your city" name="city">
+                <div class="input-group-append">
+                    <button class="btn btn-light" style="background-color: #dfe1e1" type="submit">Send
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 </div>
 <script type="text/javascript" src="front.js"></script>
 </body>
